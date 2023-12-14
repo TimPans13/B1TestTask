@@ -26,7 +26,7 @@ class Programm
         await fileProcessor.ProcessFilesAsync(path, mergedPath, "abc");
 
 
-        string connectionString = "Data Source=.;Initial Catalog=TestDataProcessingDB;Integrated Security=True";
+        string connectionString = "Data Source=.;Initial Catalog=DataProcessingDB;Integrated Security=True";
         try
         {
             await using (var connection = new SqlConnection(connectionString))

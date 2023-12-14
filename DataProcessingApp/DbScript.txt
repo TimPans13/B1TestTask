@@ -1,0 +1,23 @@
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'DataProcessingDB;')
+BEGIN
+  CREATE DATABASE FileDB;
+END;
+GO
+
+USE DataProcessingDB;
+GO
+
+IF OBJECT_ID('DataModels', 'U') IS NOT NULL
+    DROP TABLE DataModels;
+GO
+
+CREATE TABLE DataModels
+(
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Date NVARCHAR(255),
+    LatinChars NVARCHAR(10),
+    RussianChars NVARCHAR(10),
+    EvenInt INT,
+    FloatNumber FLOAT
+);
+GO
