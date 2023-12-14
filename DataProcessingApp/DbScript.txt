@@ -1,6 +1,6 @@
 IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'DataProcessingDB;')
 BEGIN
-  CREATE DATABASE FileDB;
+  CREATE DATABASE DataProcessingDB;;
 END;
 GO
 
