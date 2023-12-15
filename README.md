@@ -1,4 +1,4 @@
-Перед запуском следует выполнить скрипт в базе данных
+Перед запуском следует выполнить скрипт в базе данных(так же приложен в DbScript.txt)
 
 IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'DataProcessingDB;')
 BEGIN
